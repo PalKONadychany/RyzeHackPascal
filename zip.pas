@@ -1,4 +1,4 @@
-program zip;
+program zip; //seradi cisla ze dvou mnozin podle velikosti
 uses crt;
 var m,n,i,j,k :integer;
 a: array [1..30]of integer;
