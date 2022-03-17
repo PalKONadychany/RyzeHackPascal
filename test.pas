@@ -1,4 +1,4 @@
-program test2;
+program test2; //vytiskne nejvetsi,nejmensi a arit. prumer
 uses crt;
 var n,i :integer;
         a: array [1..10]of real;
@@ -8,7 +8,10 @@ var n,i :integer;
 begin
         ClrScr;
         i:=1;
-        readln(n,a[i]);
+        writeln('kolik cisel');
+        readln(n);
+        writeln('zadej cisla');
+        readln(a[i]);
         P:=a[i];
         M:=a[i];
         Q:=a[i];
