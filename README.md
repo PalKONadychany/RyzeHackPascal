@@ -9,4 +9,4 @@ Tady jsou nahranej nejake pascal programy z vyuky programovani na gymnaziu GUH.
 ![Jakub_Hack](https://media.discordapp.net/attachments/576369343047270410/954067358945775626/IMG_20220217_151317.jpg?width=505&height=673)
 
 # stahuj
-	`git clone https://github.com/PalKONadychany/RyzeHackPascal`
+	 git clone https://github.com/PalKONadychany/RyzeHackPascal 
