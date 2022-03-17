@@ -24,3 +24,4 @@ ClrScr;
 readln();
 end.
 
+//Proste jakub. Program tridi cisla pomoci InsertSortu - seradi je od nejmensiho po nejvtesi
