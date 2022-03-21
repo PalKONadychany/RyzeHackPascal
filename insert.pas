@@ -19,7 +19,7 @@ ClrScr;
 
                 a[j]:=k;
                 end;
-
+writeln('____');
                 for i:=1 to n do writeln(a[i],',');
 readln();
 end.
