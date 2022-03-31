@@ -38,6 +38,7 @@ repeat
       if (a=4)and(x=4) then begin  a:=3; x:=3; i:='40';j:='40'; end;
       if (a=4)and(x=3) then begin j:='AD'; i:=' '; end;
       if (a=3)and(x=4) then begin i:='AD'; j:=' '; end;
+      clrscr;
       Writeln('--------------------------------------------');
       Writeln('Stav Hry:');
       writeln(m,'(Hrac 1): sety:',c, ' gamy:',b,' body:',j);
@@ -49,18 +50,20 @@ repeat
     if (a>3)and(a>x+1) then b:=b+1
     else y:=y+1;
     a:=0; x:=0; i:='0'; j:='0';
+    clrscr;
     Writeln('--------------------------------------------');
     Writeln('Stav hry:');
     writeln(m,'(Hrac 1): sety:',c, ' gamy:',b,' body:',j);
     writeln(n,'(Hrac 2): sety:',z, ' gamy:',y,' body:',i);
     Writeln('--------------------------------------------');
-
-  until (b>5)and(b>y+1) or (y>5)and(y>b+1);
-  if (b>5)and(b>y+1)
+   // if(b=7)and(y=6) then
+  until (b>=6)and(b>y+1) or (y>=5)and(y>b+1)or(b=7)or(y=7);
+  if (b>y)
 
   then c:=c+1
   else z:=z+1;
   b:=0;y:=0;
+  clrscr;
   Writeln('--------------------------------------------');
   Writeln('Stav hry:');
   writeln(m,'(Hrac 1): sety:',c, ' gamy:',b,' body:',j);
