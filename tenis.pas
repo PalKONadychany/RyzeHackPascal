@@ -28,6 +28,7 @@ repeat
       case t of
        1:a:=a+1;
        2:x:=x+1;
+       5:begin b:=5; y:=5; end;
        0:begin writeln('zapas prerusen, koncim'); exit; end;
         else writeln('Chyba: Spantna klavesa. Stiskni  1 nebo 2 pro zvyseni skore. Pro ukonceni stiskni 0 ');
       end;
@@ -38,6 +39,30 @@ repeat
       if (a=4)and(x=4) then begin  a:=3; x:=3; i:='40';j:='40'; end;
       if (a=4)and(x=3) then begin j:='AD'; i:=' '; end;
       if (a=3)and(x=4) then begin i:='AD'; j:=' '; end;
+      if (b=6)and(b=y) then begin
+	      clrscr;
+	      Writeln('--------------------------------------------');
+	      Writeln('Stav Hry:');
+	      writeln(m,'(Hrac 1): sety:',c, ' gamy:',b,' body:',a);
+	      writeln(n,'(Hrac 2): sety:',z, ' gamy:',y,' body:',x);
+	      Writeln('--------------------------------------------');
+
+
+      repeat  writeln('tiebraker'); writeln('kdo dal bod? hrac 1/2');
+	      readln(t);  case t of 1:a:=a+1; 2:x:=x+1; 0:begin writeln('zapas prerusen, koncim'); exit; end; else writeln('chyba'); end;
+	      clrscr;
+	      Writeln('--------------------------------------------');
+	      Writeln('Stav Hry:');
+	      writeln(m,'(Hrac 1): sety:',c, ' gamy:',b,' body:',a);
+	      writeln(n,'(Hrac 2): sety:',z, ' gamy:',y,' body:',x);
+	      Writeln('--------------------------------------------');
+	      until (a=7)or(x=7);
+      if a=7 then c:=c+1
+  else z:=z+1;
+        a:=0; x:=0; i:='0'; j:='0'; b:=0; y:=0;
+	end;
+
+
       clrscr;
       Writeln('--------------------------------------------');
       Writeln('Stav Hry:');
@@ -56,9 +81,10 @@ repeat
     writeln(m,'(Hrac 1): sety:',c, ' gamy:',b,' body:',j);
     writeln(n,'(Hrac 2): sety:',z, ' gamy:',y,' body:',i);
     Writeln('--------------------------------------------');
-   // if(b=7)and(y=6) then
-  until (b>=6)and(b>y+1) or (y>=6)and(y>b+1)or(b=7)or(y=7);
-  if (b>y)
+ //   if(b=6)and(y=6) then  clrscr;
+  until (b=6)and(b>y+1) or (y=6)and(y>b+1)or(b=7)or(y=7);
+
+ if (b>y)
 
   then c:=c+1
   else z:=z+1;
