@@ -56,8 +56,8 @@ repeat
 	      writeln(m,'(Hrac 1): sety:',c, ' gamy:',b,' body:',a);
 	      writeln(n,'(Hrac 2): sety:',z, ' gamy:',y,' body:',x);
 	      Writeln('--------------------------------------------');
-	      until (a=7)or(x=7);
-      if a=7 then c:=c+1
+	      until (a>=7)and(a>x+1)or(x>6)and(x>a+1);
+      if (a>=7)and(a>x) then c:=c+1
   else z:=z+1;
         a:=0; x:=0; i:='0'; j:='0'; b:=0; y:=0;
 	end;
