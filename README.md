@@ -7,6 +7,14 @@ Tady jsou nahranej nejake pascal programy z vyuky programovani na gymnaziu GUH.
 * Popis bude nekdy
 
 ![Jakub_Hack](https://media.discordapp.net/attachments/576369343047270410/954067358945775626/IMG_20220217_151317.jpg?width=505&height=673)
+## je to legit? Funguje to?
 
-# stahuj
+<details>
+<summary>Nevěříš? Tady je důkaz.</summary>
+
+<img src="https://media.discordapp.net/attachments/576369343047270410/969223285961293874/Photo_1.jpg"> </img>
+Svatá tužka ✏️
+</details>
+
+# stahuj. než to zakážou
 	 git clone https://github.com/PalKONadychany/RyzeHackPascal 
