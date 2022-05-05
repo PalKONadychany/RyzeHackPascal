@@ -53,6 +53,14 @@ clrscr;
 		until a=(n-e);
 	d:=d+4;
 	until b=(n*(n-1)/2);
+	a:=0;
+	gotoxy(4,5+d+n); writeln('hrac      body     poradi');
+	for a:=1 to n do begin
+	//repeat
+	gotoxy(4,6+d+n); writeln(a); d:=d+1;
+	//until a=n;
+	end;
+
 writeln(' ');
 writeln(' ');
 end.
