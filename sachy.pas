@@ -19,27 +19,17 @@ clrscr;
 	until j=n; d:=0;
 	repeat
 		repeat
-			gotoxy(2+c,2+d);
-			writeln(' _____ ');
-			gotoxy(2+c,3+d);
-			writeln('|');
-			gotoxy(2+c,4+d);
-			writeln('|');
-			gotoxy(8+c,3+d);
-			writeln('|');
-			gotoxy(8+c,4+d);
-			writeln('|');
-			gotoxy(2+c,5+d);
-			writeln('|');
-			gotoxy(8+c,5+d);
-			writeln('|');
-			gotoxy(2+c,6+d);
-			writeln(' _____ ');
-			a:=a+1;
-			c:=c+6;
+			gotoxy(2+c,2+d); writeln(' _____ ');
+			gotoxy(2+c,3+d); writeln('|');
+			gotoxy(2+c,4+d); writeln('|');
+			gotoxy(8+c,3+d); writeln('|');
+			gotoxy(8+c,4+d); writeln('|');
+			gotoxy(2+c,5+d); writeln('|');
+			gotoxy(8+c,5+d); writeln('|');
+			gotoxy(2+c,6+d); writeln(' _____ ');
+			a:=a+1; c:=c+6;
 		until a=n;
 		c:=0; a:=0; i:=0; d:=d+4; b:=b+1;
-
 	until b=n;
 	b:=0; d:=0; a:=0; c:=0; q:=1;
 	repeat
@@ -68,16 +58,19 @@ clrscr;
 	repeat
 		q:=1+a;
 		y:=m[q];
-		q:=0;
+		q:=0; e:=0;
 		repeat
 			q:=q+1;
 			if m[q]>y then c:=c+1; if m[q]=y then e:=e+1
 		until q=n;
 		a:=a+1; x[a]:=c+1; z[a]:=x[a]+e-1; c:=0; e:=0;
-	until a=n;
+	until a=n; q:=0;
 
-	if x[q]=z[q] then for q:=1 to n do begin gotoxy(25,6+d+n); writeln(x[q]); d:=d+1; end;
-	if x[q]<>z[q] then for q:=1 to n do begin gotoxy(25,6+d+n); writeln(x[q],' - ',z[q]); d:=d+1; end;
+	repeat
+	q:=q+1;
+	if x[q]=z[q] then begin gotoxy(25,6+d+n); writeln(x[q]); d:=d+1; end;
+	if x[q]<>z[q] then begin gotoxy(25,6+d+n); writeln(x[q],' - ',z[q]); d:=d+1; end;
+	until q=n;
 writeln(' ');
 writeln(' ');
 end.
