@@ -1,7 +1,7 @@
 # RyzeHackPascal
 
 repository of pascal files for students of GUH
-## Purpose? Im just learning how git works, so I did this as a personal dump for school assignments. If you want to copy them, be my guest
+## Purpose? I did this as a personal dump for school assignments. If you want to copy them, be my guest
 Tady jsou nahranej nejake pascal programy z vyuky programovani na gymnaziu GUH. 
 * Pokud to nemozes spustit, zavolej Ševovi
 * Moc tu toho neni, mosi mi to poslat Jakub
