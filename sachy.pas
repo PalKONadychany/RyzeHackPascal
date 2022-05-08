@@ -8,13 +8,13 @@ x,z: array[1..20]of integer;
 begin
 clrscr;
 repeat
-	writeln('sachova tabulka. Po zadani poctu hracu pouyivejte tyto klavesy:');
+	writeln('Sachova tabulka. Po zadani poctu hracu pouzivejte tyto klavesy:');
 	writeln('1: zapise vyhru, 0: zapise prohru, x:remiza, %:konec');
 	writeln('');
 	writeln('zadej pocet hracu');
 	readln(n);
 	if n<2 then begin clrscr; writeln('Musi se zucastnit alespon 2 hraci'); end;
-	if n>13 then begin writeln('tabulka je urcena pro pocet hracu mensi nez deset. Od 14 a vys je zdeformovana'); readln(); end;
+	if n>12 then begin writeln('tabulka je urcena pro turnaje do deseti hracu.'); writeln('Pri vyssich poctech se tabulka muze zdeformovat, pokud mozno, zmensete font a restartujte'); writeln('kliknutim pokracujte'); readln(); end;
 until n>1;
 clrscr;
 	for j:=1 to n do begin gotoxy(5+c,1); writeln(j); c:=c+6; end; j:=0; c:=0;
